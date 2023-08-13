@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números aleatorios</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 3rem;
+        }
+        span{
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">Dame un aleatorio</button>
+    <h2>Número aleatorio: <span id="num">. . . </span></h2>
+
+    <script>
+        let boton = document.getElementById("btn");
+        let num = document.getElementById("num");
+
+        boton.addEventListener("click", function(){
+            let maximo = maximo + 1;
+            num.textContent = Math.floor(Math.random()*11);
+        });
+    </script>
+</body>
+</html>

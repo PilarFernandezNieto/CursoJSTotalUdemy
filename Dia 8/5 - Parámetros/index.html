@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Constructores</title>
+  </head>
+  <body>
+    <script>
+      function Perro(raza, edad) {
+        this.raza = raza;
+        this.edad = edad;
+        this.patas = 4;
+        this.ladrar = function () {
+          console.log("Guau");
+        };
+      }
+
+      let simba = new Perro("Shin Tzu", 4);
+      let reina = new Perro("Caniche", 15);
+      let batu = new Perro("Cruza", 8);
+
+      function Empleado(nombre, apellido, edad, cargo) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.edad = edad;
+        this.cargo = cargo;
+        this.presentarse = function () {
+          console.log(`Mi nombre es ${this.nombre}, soy ${this.cargo}`);
+        };
+      }
+    </script>
+  </body>
+</html>

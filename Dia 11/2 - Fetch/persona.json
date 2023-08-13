@@ -1,0 +1,14 @@
+{
+    "nombre": "Pedro Toledo",
+    "edad": 35,
+    "esEstudiante": false,
+    "direccion": {
+        "calle": "Av. Siempreviva 742",
+        "ciudad": "Springfield"
+    },
+    "telefonos": [
+        "555-222-111",
+        "555-444-777"
+    ]
+    
+}

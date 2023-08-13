@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subclases</title>
+  </head>
+  <body>
+    <script>
+      /* Superclase */
+      class Deportista {
+        constructor(nombre, apellido) {
+          this.nombre = nombre;
+          this.apellido = apellido;
+        }
+      }
+
+      /* Subclase */
+      class Futbolista extends Deportista {
+        constructor(nombre, apellido, cantGoles) {
+          super(nombre, apellido);
+          this.cantGoles = cantGoles;
+        }
+      }
+    </script>
+  </body>
+</html>

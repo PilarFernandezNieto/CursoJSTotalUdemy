@@ -1,0 +1,16 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 50%;
+    margin: 10rem auto;
+}
+h1{
+    color: orangered;
+    text-shadow: 2px 2px 2px green;
+    text-align: center;
+}
+button{
+    background-color: green;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}

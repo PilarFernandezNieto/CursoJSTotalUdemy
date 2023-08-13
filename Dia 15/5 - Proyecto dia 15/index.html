@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dispositivos</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <header>
+      <h1>MI TIENDA</h1>
+    </header>
+    <section id="listado">
+      <h2>LISTADO DE DISPOSITIVOS</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>#ID</th>
+            <th>MARCA</th>
+            <th>MODELO</th>
+            <th>COLOR</th>
+            <th>ALMACENAMIENTO</th>
+            <th>PROCESADOR</th>
+          </tr>
+        </thead>
+        <tbody id="datosListado"></tbody>
+      </table>
+    </section>
+    <section id="operaciones">
+      <div id="div1">
+        <p><label for="consultaID">Introduzca el id del producto</label></p>
+        <p><input type="number" min="1" name="consultaID" id="consultaId" /></p>
+        <p>
+          <button id="consulta">Buscar</button>
+          <button id="modificacion">Modificar</button>
+          <button id="borrado">Borrar</button>
+        </p>
+      </div>
+      <div id="div2">
+        <p>
+          <label for="id">ID</label><br />
+          <textarea id="id"></textarea>
+        </p>
+        <p>
+          <label for="marca">Marca</label><br />
+          <textarea id="marca"></textarea>
+        </p>
+        <p>
+          <label for="modelo">Modelo</label><br />
+          <textarea id="modelo"></textarea>
+        </p>
+        <p>
+          <label for="color">Color</label><br />
+          <textarea id="color"></textarea>
+        </p>
+        <p>
+          <label for="almacenamiento">Almacenamiento</label><br />
+          <textarea id="almacenamiento"></textarea>
+        </p>
+        <p>
+          <label for="procesador">Procesador</label><br />
+          <textarea id="procesador"></textarea>
+        </p>
+      </div>
+    </section>
+    <section id="insercion">
+      <h3>Agregue un nuevo dispositivo</h3>
+      <div class="formulario">
+        <p class="fila">
+          <label for="id">ID:</label>
+          <input type="number" placeholder="Id" id="addId" />
+        </p>
+        <p class="fila">
+          <label for="marca">Marca:</label>
+          <input type="text" id="addMarca" placeholder="Marca" />
+        </p>
+        <p class="fila">
+          <label for="modelo">Modelo:</label>
+          <input type="text" id="addModelo" placeholder="Modelo" />
+        </p>
+        <p class="fila">
+          <label for="color">Color:</label>
+          <input type="text" id="addColor" placeholder="Color" />
+        </p>
+        <p class="fila">
+          <label for="almacenamiento">Almacenamiento:</label>
+          <input
+            type="text"
+            id="addAlmacenamiento"
+            placeholder="Almacenamiento"
+          />
+        </p>
+        <p class="fila">
+          <label for="procesador">Procesador:</label>
+          <input type="text" id="addProcesador" placeholder="Procesador" />
+        </p>
+        <button id="add">Añadir dispositivo</button>
+      </div>
+    </section>
+    <script src="js/script.js"></script>
+  </body>
+</html>

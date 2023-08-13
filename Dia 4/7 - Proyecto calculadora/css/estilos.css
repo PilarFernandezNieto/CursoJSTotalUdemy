@@ -1,0 +1,58 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 80%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.container {
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    margin: 50px auto;
+    padding: 1rem;
+    width: 400px;
+}
+input {
+    height: 2rem;
+    padding: 0.5rem;
+    border-color: gainsboro;
+    border-radius: 5px;
+    width: 34%;
+}
+p.botones {
+    margin: 0.5rem;
+    display:flex;
+    justify-content: space-evenly;
+}
+button.peque{
+    width: 16%;
+    height: 3rem;
+    border-radius: 5px;
+    border-color: none;
+    font-size: 2rem;
+    background-color: lightskyblue;
+
+}
+button.grande {
+    width: 40%;
+    height: 3rem;
+    border-radius: 5px;
+    border-color: none;
+    font-size: 1rem;
+    font-style: italic;
+    background-color: lightskyblue;
+
+}
+#resultado {
+    width: 83%;
+}
+button.mediano {
+    width: 25%;
+    height: 3rem;
+    border-radius: 5px;
+    border-color: none;
+    font-size: 1rem;
+    font-style: italic;
+    background-color: lightskyblue;
+
+}
