@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso de usuario</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <p>Ingresa tu nombre</p>
+    <input type="text"/>
+    <button onclick="saludarUsuario()">Saludar</button>
+
+    <script>
+        function saludarUsuario(){
+            var nombre = document.querySelector("input").value;
+            alert("Hola " + nombre);
+        }
+    </script>
+</body>
+</html>

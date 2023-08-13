@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarma</title>
+
+    <style>
+        audio::-webkit-media-controls-panel {
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+
+    <input type="number" id="tiempo">
+    <button onclick="comenzarTiempo()">Alarma</button>
+    <h1 id="titulo" style="color:red">APAGADO</h1>
+
+    <!--Si añadimos el atributo controls el temporizador no funciona-->
+    <audio id="audioAlarma" controls>
+        <source src="audios/alarma.mp3" type="audio/mpeg"/>
+        Sonido no habilitado
+    </audio>
+
+    <script>
+        let tiempo = document.getElementById("tiempo");
+        let elemento = document.getElementById("titulo");
+        let sonido = document.getElementById("audioAlarma");
+
+        function comenzarTiempo(){
+            setTimeout(tiempoCumplido, 1000 * tiempo.value);
+        }
+
+        function tiempoCumplido(){
+            //alert("Se acabó el tiempo");
+            elemento.textContent = "ENCENDIDO";
+            elemento.style.color = "green";
+            sonido.play();
+        }
+    </script>
+</body>
+</html>

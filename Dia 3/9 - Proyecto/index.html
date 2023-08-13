@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Preguntas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+   
+</head>
+<body onload="comenzar()">
+    <h2>Responde rápido a las preguntas <span  id="tiempo" class="cuentaRegresiva"></span></h2>
+    <div>
+        <p>¿Cuál es la capital de Francia?</p>
+        <input type="text" id="p1"/>
+    </div>
+    <div>
+        <p>¿Cuál es la capital de España?</p>
+        <input type="text" id="p2"/>
+    </div>
+    <div>
+        <p>¿Cuál es la capital de Portugal?</p>
+        <input type="text" id="p3"/>
+    </div>
+    <div>
+        <p>¿Cuál es la capital de Italia?</p>
+        <input type="text" id="p4"/>
+    </div>
+    <div>
+        <p>¿Cuál es la capital de Alemania?</p>
+        <input type="text" id="p5"/>
+    </div>
+    <br><br>
+    <button onclick="finalizar()">Finalizar</button><br><br>
+   
+    <button onclick="volverAIntentar()">Volver a intentarlo</button>
+    <audio id="sonido">
+        <source src="audio/gameover.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+         
+         let tiempoTerminado;
+         let intervaloDeTiempo;
+
+        function comenzar(){
+            tiempoTerminado = setTimeout(gameOver, 30 * 1000);
+            intervaloDeTiempo = setInterval(regresion,1000);
+            document.getElementById("tiempo").textContent = 30;
+        }
+
+        function regresion(){
+            let tiempo = document.getElementById("tiempo").textContent;
+            document.getElementById("tiempo").textContent = tiempo - 1;
+        }
+        function mostrar(){
+            let elemento = document.getElementById("tiempo").textContent;
+        }
+        function gameOver(){
+            clearInterval(intervaloDeTiempo);
+            document.getElementById("tiempo").textContent = 0;
+            document.getElementById("sonido").play();
+            alert("Game Over. Inténtalo de nuevo");
+        }
+
+        function finalizar(){
+            clearTimeout(tiempoTerminado);
+            clearInterval(intervaloDeTiempo);
+            document.getElementById("tiempo").textContent = 0;
+
+            recuperar();
+        }
+        function recuperar(){
+            let r1 = document.getElementById("p1").value;
+            let r2 = document.getElementById("p2").value;
+            let r3 = document.getElementById("p3").value;
+            let r4 = document.getElementById("p4").value;
+            let r5 = document.getElementById("p5").value;
+            let fecha = new Date();
+            let fechaformat = fecha.toLocaleDateString("es-ES");
+
+            alert("1. " + r1 + "\n2. " + r2 + "\n3. " + r3 + "\n4. " + r4 + "\n5. " + r5 + "\nFecha: " + fechaformat);
+        }
+        function volverAIntentar(){
+            location.reload();
+        }
+    </script>
+</body>
+</html>

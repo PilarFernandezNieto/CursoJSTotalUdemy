@@ -1,0 +1,27 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 50px;
+}
+button {
+    width: 100px;
+    height: 50px;
+    background-color: darkkhaki;
+}
+h2 {
+    color: darkgoldenrod;
+}
+p {
+    font-weight: bold;
+    font-style: italic;
+}
+input {
+    width: 100px;
+    height: 30px;
+    padding-left: 10px;
+}
+.cuentaRegresiva {
+    border: 1px solid red;
+    color: red;
+    padding: 10px;
+    
+}

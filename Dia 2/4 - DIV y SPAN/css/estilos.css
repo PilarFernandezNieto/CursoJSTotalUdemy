@@ -1,0 +1,8 @@
+.calculo {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(172, 170, 170);
+}
+.resultado {
+    color: red;
+    font-weight: bold;
+}
