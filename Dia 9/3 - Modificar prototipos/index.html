@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modificar prototipos</title>
+  </head>
+  <body>
+    <script>
+      function Libro(autor, titulo, cantPaginas) {
+        this.autor = autor;
+        this.titulo = titulo;
+        this.cantPaginas = cantPaginas;
+      }
+
+      let libro1 = new Libro("Stephen King", "Carrie", 524);
+
+      Libro.prototype.abrirLibro = function () {
+        alert(this.titulo + " ha sido abierto");
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+body {
+    background-color: antiquewhite;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 70%;
+    margin: 3rem auto;
+}
+.espera img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;;
+    visibility: hidden;
+}
+.logo img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+.cuadro, .logo, .espera {
+    width: 35%;
+    margin: 0 auto;
+    text-align: center;
+}
+.cuadro div{
+    background-color: brown;
+    color: white;
+   
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.espera img{
+    margin: 1rem;
+}

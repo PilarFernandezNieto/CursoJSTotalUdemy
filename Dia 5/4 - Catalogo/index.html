@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo de películas</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <h1>¡Bienvenidos al cine!</h1>
+    <h3>Menú</h3>
+    <p>
+      Queremos hacer de tu visita una experiencia más placentera. Para eso
+      introduce tu eddad y selecciona el género que más te gusta y te
+      recomendamos tu película ideal.
+    </p>
+    <p>
+      Introduce tu edad:
+      <input type="number" id="edad" />
+    </p>
+    <p>
+      <button onclick="recomendar('drama')">Drama</button>
+      <button onclick="recomendar('comedia')">Comedia</button>
+      <button onclick="recomendar('musical')">Musical</button>
+      <button onclick="recomendar('crimen')">Crimen</button>
+    </p>
+    <h3>Recomendación: <span id="recomendacion"></span></h3>
+    <script src="js/script.js"></script>
+  </body>
+</html>

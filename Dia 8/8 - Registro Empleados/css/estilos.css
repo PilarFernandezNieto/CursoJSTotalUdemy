@@ -1,0 +1,24 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 2rem;
+}
+h1 {
+    text-transform: uppercase;
+    border-bottom: 1px solid rgb(198, 195, 195);
+    padding-bottom: 0.5rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: DarkSlateBlue;
+    color: white;
+    margin-bottom: 1rem;
+    border-color: DarkSlateBlue;
+    border-radius: 5px;
+    width: 215px;
+}
+input {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0.5rem 1rem;
+}

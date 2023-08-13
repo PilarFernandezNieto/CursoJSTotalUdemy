@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switch</title>
+  </head>
+  <body>
+    <p>Escoja una opción:</p>
+    <ol>
+      <li>Manzana</li>
+      <li>Naranja</li>
+      <li>Plátano</li>
+      <li>Pera</li>
+      <li>Sandía</li>
+    </ol>
+
+    <input type="number" id="opcion" max="5" min="1" />
+    <button onclick="consultar()">Consultar</button>
+    <h3 id="respuesta"></h3>
+
+    <script>
+      function consultar() {
+        let opcion = document.getElementById("opcion").value;
+        let respuesta = document.getElementById("respuesta");
+
+        switch (opcion) {
+          case "1":
+            respuesta.textContent = "10€";
+            break;
+          case "2":
+            respuesta.textContent = "20€";
+            break;
+          case "3":
+            respuesta.textContent = "30€";
+            break;
+          case "4":
+            respuesta.textContent = "40€";
+            break;
+          case "5":
+            respuesta.textContent = "50€";
+            break;
+        }
+      }
+    </script>
+  </body>
+</html>

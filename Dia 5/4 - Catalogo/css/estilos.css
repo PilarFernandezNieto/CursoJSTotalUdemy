@@ -1,0 +1,12 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: antiquewhite;
+}
+button, input {
+    padding: 0.5rem 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+button{
+    background-color: black;
+    color:white;
+}

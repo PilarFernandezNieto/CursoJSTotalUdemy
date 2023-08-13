@@ -1,0 +1,18 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "button-type": "off",
+    "axe/forms": "off",
+    "axe/text-alternatives": "off",
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": [
+          "meta[name=theme-color]"
+        ]
+      }
+    ]
+  }
+}

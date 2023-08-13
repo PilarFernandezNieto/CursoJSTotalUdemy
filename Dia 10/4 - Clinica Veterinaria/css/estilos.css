@@ -1,0 +1,16 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contenedor {
+    width: 85%;
+    margin: 10rem auto;
+}
+h1 {
+    color: green;
+    text-shadow: 2px 3px 1px greenyellow;
+}
+button {
+    background-color: greenyellow;
+    border-color: greenyellow;
+    padding: 1rem;
+}

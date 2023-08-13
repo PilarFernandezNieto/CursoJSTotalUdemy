@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sincronía y Asincronía</title>
+  </head>
+  <body>
+    <script>
+      // ACCION 1
+      console.log("Incio del código sincrónico");
+
+      //   // ACCION 2 - FUNCIÓN SÍNCRONA
+      //   for (let i = 0; i < 10; i++) {
+      //     console.log(i);
+      //   }
+
+      // ACCION 2 - FUNCIÓN ASÍNCRONA DE MANERA NATURAL
+      setTimeout(function () {
+        for (let i = 0; i < 10; i++) {
+          console.log(i);
+        }
+      }, 0);
+
+      // ACCION 3
+      console.log("Fin del código síncrono");
+    </script>
+  </body>
+</html>
